@@ -106,6 +106,23 @@ DATABASE_URL=postgresql://app:!ChangeMe!@127.0.0.1:5432/app?serverVersion=16&cha
 API_BASE_URL=https://rickandmortyapi.com/api
 ```
 
+## Optional: Bash Aliases
+
+To make navigation easier, you can add aliases to your `~/.bashrc`:
+
+```bash
+alias racsymfony='cd ~/projects/rickandmorty-symfony'
+alias racsymfony-up='cd ~/projects/rickandmorty-symfony && docker compose up -d'
+alias racsymfony-down='cd ~/projects/rickandmorty-symfony && docker compose down'
+alias racsymfony-bash='docker exec -it rickandmorty-symfony bash'
+```
+
+Then apply the changes:
+
+```bash
+source ~/.bashrc
+```
+
 ## Notes
 
 - This app is **stateless** — all data is fetched live from the Rick and Morty API with no local persistence.
