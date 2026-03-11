@@ -63,7 +63,7 @@ npm run dev
 ### Get inside container
 
 ```bash
-docker exec -it bax-music bash
+docker exec -it rickandmorty-symfony bash
 ```
 
 ### Clear cache

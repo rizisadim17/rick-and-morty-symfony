@@ -1,6 +1,6 @@
 services:
   php:
-    container_name: bax-music
+    container_name: rickandmorty-symfony
     build:
       context: .
       dockerfile: Dockerfile
@@ -38,7 +38,7 @@ services:
 
   mailer:
     image: axllent/mailpit
-    container_name: bax-music-mailer-1
+    container_name: rickandmorty-symfony-mailer
     ports:
       - "51479:1025"
       - "51478:8025"
